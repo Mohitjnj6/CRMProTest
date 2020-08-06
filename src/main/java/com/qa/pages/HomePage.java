@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -23,6 +24,9 @@ public class HomePage extends TestBase
 	
 	@FindBy(xpath ="//a[contains(text(),'Tasks')]")
 	WebElement signUpBtn;
+	
+	@FindBy(xpath ="//a[contains(text(),'New Contact')]")
+	WebElement newContactBtn;
 	
 	//initialization
 public HomePage()
@@ -51,8 +55,16 @@ public ContactsPage verifyContactBtn()
 {	
 	contactBtn.click();
 	return new ContactsPage();
-	
 }
+
+public ContactsPage clickNewContactBtn()
+{	
+	Actions action = new Actions(driver);
+	action.moveToElement(contactBtn).build().perform();
+	newContactBtn.click();
+	return new ContactsPage();
+}
+
 
 
 

@@ -1,25 +1,29 @@
 package com.qa.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import com.qa.util.TestUtil;
 
 public class ContactsPage extends TestUtil
 {
 	//Page Factory
-		@FindBy(xpath ="//td[contains(text(),'User: Demo User')]")
-		WebElement user;
+		@FindBy(xpath ="//input[@name='first_name']")
+		WebElement firstName;
 		
-		@FindBy(xpath ="//a[contains(text(),'Contacts')]")
-		WebElement contactBtn;
+		@FindBy(xpath ="//input[@name='surname']")
+		WebElement lastName;
 		
-		@FindBy(xpath ="//a[contains(text(),'Deals')]")
-		WebElement dealsBtn;
+		@FindBy(xpath ="//input[@name='client_lookup']")
+		WebElement company;
 		
-		@FindBy(xpath ="//a[contains(text(),'Tasks')]")
-		WebElement signUpBtn;
+		@FindBy(xpath ="//input[@type='submit']")
+		WebElement saveContact;
+		
+		
 		
 		//initialization
 	public ContactsPage()
@@ -29,27 +33,32 @@ public class ContactsPage extends TestUtil
 
 		//Actions
 
-	public boolean verifyUser()
+	public void createNewContact(String ttl, String fn, String ln, String cmpny)
 	{
+		Select select = new Select(driver.findElement(By.xpath("//select[@name='title']")));
+		select.selectByVisibleText(ttl);
+		firstName.sendKeys(fn);
+		lastName.sendKeys(ln);
+		company.sendKeys(cmpny);
+		saveContact.click();
 		
-		return user.isDisplayed();
 	}
 		
 
-	public String verifyHomePageTitle()
-	{	
-		String title = driver.getTitle();
-		System.out.println(title);
-		return title;	
-	}
-
-
-	public ContactsPage verifyContactBtn()
-	{	
-		contactBtn.click();
-		return new ContactsPage();
-		
-	}
+//	public String verifyHomePageTitle()
+//	{	
+//		String title = driver.getTitle();
+//		System.out.println(title);
+//		return title;	
+//	}
+//
+//
+//	public ContactsPage verifyContactBtn()
+//	{	
+//		contactBtn.click();
+//		return new ContactsPage();
+//		
+//	}
 
 
 
