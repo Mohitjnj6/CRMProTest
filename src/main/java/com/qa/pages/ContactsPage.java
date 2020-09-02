@@ -1,6 +1,5 @@
 package com.qa.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -11,6 +10,9 @@ import com.qa.util.TestUtil;
 public class ContactsPage extends TestUtil
 {
 	//Page Factory
+		@FindBy(xpath ="//select[@name='title']")
+		WebElement title;
+	
 		@FindBy(xpath ="//input[@name='first_name']")
 		WebElement firstName;
 		
@@ -35,7 +37,7 @@ public class ContactsPage extends TestUtil
 
 	public void createNewContact(String ttl, String fn, String ln, String cmpny)
 	{
-		Select select = new Select(driver.findElement(By.xpath("//select[@name='title']")));
+		Select select = new Select(title);
 		select.selectByVisibleText(ttl);
 		firstName.sendKeys(fn);
 		lastName.sendKeys(ln);
