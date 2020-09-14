@@ -3,6 +3,7 @@ package com.qa.test;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import org.testng.Assert;
 //import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -33,6 +34,8 @@ public class ContactsPageTest extends TestBase
 		loginPage= new LoginPage();
 		contactsPage = new ContactsPage();
 		homePage = loginPage.verifyLoginBtn(prop.getProperty("username"), prop.getProperty("password"));
+		TestUtil.switchToFrame();
+		homePage.clickNewContactBtn();
 	}
 	
 	@DataProvider
@@ -44,13 +47,21 @@ public class ContactsPageTest extends TestBase
 	
 	
 	@Test(dataProvider= "testData")
-	public void createNewContactTest(String title, String firstName,String lastNAme,String company)
+	public void createNewContactTest(String title, String firstName,String lastName,String company)
 	{
-		TestUtil.switchToFrame();
-		homePage.clickNewContactBtn();
-		contactsPage.createNewContact(title, firstName, lastNAme, company);
+//		TestUtil.switchToFrame();
+//		homePage.clickNewContactBtn();
+		contactsPage.createNewContact(title, firstName, lastName, company);
 	}
 	
+	
+	@Test
+	public void verifyContactsLabelTest()
+	{
+		boolean cntcLbl = contactsPage.verifyContactsLabel();
+		Assert.assertTrue(cntcLbl);
+		
+	}
 	
 	
 	@AfterMethod

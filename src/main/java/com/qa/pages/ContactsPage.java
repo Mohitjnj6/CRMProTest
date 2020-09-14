@@ -10,6 +10,9 @@ import com.qa.util.TestUtil;
 public class ContactsPage extends TestUtil
 {
 	//Page Factory
+		@FindBy(xpath ="//a[contains(text(),'Contacts')]")
+		WebElement contactsLabel;
+		
 		@FindBy(xpath ="//select[@name='title']")
 		WebElement title;
 	
@@ -47,12 +50,11 @@ public class ContactsPage extends TestUtil
 	}
 		
 
-//	public String verifyHomePageTitle()
-//	{	
-//		String title = driver.getTitle();
-//		System.out.println(title);
-//		return title;	
-//	}
+	public boolean verifyContactsLabel()
+	{	
+		boolean label = contactsLabel.isDisplayed();
+		return label;	
+	}
 //
 //
 //	public ContactsPage verifyContactBtn()
