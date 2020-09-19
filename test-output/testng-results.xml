@@ -1,203 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="CRMPRO" duration-ms="170757" started-at="2020-09-06T20:30:01 IST" finished-at="2020-09-06T20:32:52 IST">
+  <suite name="Default suite" duration-ms="17133" started-at="2020-09-20T01:33:59 IST" finished-at="2020-09-20T01:34:16 IST">
     <groups>
     </groups>
-    <test name="CRMproTest" duration-ms="170757" started-at="2020-09-06T20:30:01 IST" finished-at="2020-09-06T20:32:52 IST">
-      <class name="com.qa.test.ContactsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="setUp" is-config="true" duration-ms="13343" started-at="2020-09-06T20:31:31 IST" finished-at="2020-09-06T20:31:44 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="createNewContactTest" duration-ms="2354" started-at="2020-09-06T20:31:44 IST" data-provider="testData" finished-at="2020-09-06T20:31:47 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dr.]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Aaa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chhii]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Corona]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="tearDown" is-config="true" duration-ms="4720" started-at="2020-09-06T20:31:47 IST" finished-at="2020-09-06T20:31:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="setUp" is-config="true" duration-ms="13048" started-at="2020-09-06T20:31:51 IST" finished-at="2020-09-06T20:32:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="createNewContactTest" duration-ms="2400" started-at="2020-09-06T20:32:04 IST" data-provider="testData" finished-at="2020-09-06T20:32:07 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Sir]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Aaa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Handwash]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Protection]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="tearDown" is-config="true" duration-ms="4908" started-at="2020-09-06T20:32:07 IST" finished-at="2020-09-06T20:32:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="setUp" is-config="true" duration-ms="13697" started-at="2020-09-06T20:32:12 IST" finished-at="2020-09-06T20:32:25 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="createNewContactTest" duration-ms="2355" started-at="2020-09-06T20:32:25 IST" data-provider="testData" finished-at="2020-09-06T20:32:28 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mr.]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Aaa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Distancing]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Safety]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewContactTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="tearDown" is-config="true" duration-ms="4707" started-at="2020-09-06T20:32:28 IST" finished-at="2020-09-06T20:32:32 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="setUp" is-config="true" duration-ms="14585" started-at="2020-09-06T20:32:32 IST" finished-at="2020-09-06T20:32:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactsLabelTest()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="verifyContactsLabelTest" duration-ms="85" started-at="2020-09-06T20:32:47 IST" finished-at="2020-09-06T20:32:47 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactsLabelTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.ContactsPageTest@76f2b07d]" name="tearDown" is-config="true" duration-ms="4663" started-at="2020-09-06T20:32:47 IST" finished-at="2020-09-06T20:32:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.test.ContactsPageTest -->
+    <test name="Default test" duration-ms="17133" started-at="2020-09-20T01:33:59 IST" finished-at="2020-09-20T01:34:16 IST">
       <class name="com.qa.test.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="setUp" is-config="true" duration-ms="6079" started-at="2020-09-06T20:30:42 IST" finished-at="2020-09-06T20:30:48 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.LoginPageTest@17579e0f]" name="setUp" is-config="true" duration-ms="11253" started-at="2020-09-20T01:33:59 IST" finished-at="2020-09-20T01:34:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="loginPageTitleTest" duration-ms="24" started-at="2020-09-06T20:30:48 IST" finished-at="2020-09-06T20:30:48 IST">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:0, instance:com.qa.test.LoginPageTest@17579e0f]" name="loginPageTitleTest" duration-ms="45" started-at="2020-09-20T01:34:10 IST" finished-at="2020-09-20T01:34:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="tearDown" is-config="true" duration-ms="5683" started-at="2020-09-06T20:30:48 IST" finished-at="2020-09-06T20:30:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="setUp" is-config="true" duration-ms="6901" started-at="2020-09-06T20:30:54 IST" finished-at="2020-09-06T20:31:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginBtnTest()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="verifyLoginBtnTest" duration-ms="4934" started-at="2020-09-06T20:31:01 IST" finished-at="2020-09-06T20:31:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginBtnTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="tearDown" is-config="true" duration-ms="5702" started-at="2020-09-06T20:31:06 IST" finished-at="2020-09-06T20:31:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="setUp" is-config="true" duration-ms="7603" started-at="2020-09-06T20:31:12 IST" finished-at="2020-09-06T20:31:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySignUpBtnTest()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="verifySignUpBtnTest" duration-ms="5134" started-at="2020-09-06T20:31:19 IST" finished-at="2020-09-06T20:31:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignUpBtnTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.LoginPageTest@1f57539]" name="tearDown" is-config="true" duration-ms="5688" started-at="2020-09-06T20:31:24 IST" finished-at="2020-09-06T20:31:30 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.LoginPageTest@17579e0f]" name="tearDown" is-config="true" duration-ms="5762" started-at="2020-09-20T01:34:10 IST" finished-at="2020-09-20T01:34:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.test.LoginPageTest -->
-      <class name="com.qa.test.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="setUp" is-config="true" duration-ms="12127" started-at="2020-09-06T20:30:01 IST" finished-at="2020-09-06T20:30:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyContactBtnTest()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="verifyContactBtnTest" duration-ms="1636" started-at="2020-09-06T20:30:13 IST" finished-at="2020-09-06T20:30:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactBtnTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="tearDown" is-config="true" duration-ms="2107" started-at="2020-09-06T20:30:15 IST" finished-at="2020-09-06T20:30:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="setUp" is-config="true" duration-ms="9573" started-at="2020-09-06T20:30:17 IST" finished-at="2020-09-06T20:30:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="verifyHomePageTitleTest" duration-ms="12" started-at="2020-09-06T20:30:27 IST" finished-at="2020-09-06T20:30:27 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="tearDown" is-config="true" duration-ms="2118" started-at="2020-09-06T20:30:27 IST" finished-at="2020-09-06T20:30:29 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="setUp" is-config="true" duration-ms="11805" started-at="2020-09-06T20:30:29 IST" finished-at="2020-09-06T20:30:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserTest()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="verifyUserTest" duration-ms="160" started-at="2020-09-06T20:30:40 IST" finished-at="2020-09-06T20:30:41 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.HomePageTest@e320068]" name="tearDown" is-config="true" duration-ms="1660" started-at="2020-09-06T20:30:41 IST" finished-at="2020-09-06T20:30:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.test.HomePageTest -->
-    </test> <!-- CRMproTest -->
-  </suite> <!-- CRMPRO -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
